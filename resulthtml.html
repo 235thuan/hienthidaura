@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <title>Hello Kitty</title>
 
-    <script src="resultdocument.write.js"></script>
+<!--    <script src="resultdocument.write.js"></script>-->
 <!--    <script src="resultalert.js"></script>-->
 <!--    <script src="resultconsole.js"></script>-->
 </head>
 <body>
-<div id="messageDiv">
-
-</div>
-<button type="button" onclick="showmessage();">
-    Click Me!
-</button>
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage();">Bấm vào!</button>
+<script>
+    function showMessage(){
+        document.getElementById('messageDiv').innerHTML = 'Chú thích!';
+    }
+</script>
 <script>
     function showmessenge(){
         document.getElementById('messageDiv').innerHTML='Xin Chào!';
